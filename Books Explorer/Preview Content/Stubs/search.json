@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "title": "The Great Gatsby",
+        "authorName": "F. Scott Fitzgerald",
+        "firstPublishYear": 1925,
+        "coverId": "123456",
+        "image": "https://example.com/images/great_gatsby.jpg",
+        "description": "A novel set in the Roaring Twenties, it tells the story of Jay Gatsby's unrequited love for Daisy Buchanan."
+    },
+    {
+        "id": 2,
+        "title": "To Kill a Mockingbird",
+        "authorName": "Harper Lee",
+        "firstPublishYear": 1960,
+        "coverId": "654321",
+        "image": "https://example.com/images/to_kill_a_mockingbird.jpg",
+        "description": "A novel about the serious issues of rape and racial inequality, seen through the eyes of a young girl in the American South."
+    },
+    {
+        "id": 3,
+        "title": "1984",
+        "authorName": "George Orwell",
+        "firstPublishYear": 1949,
+        "coverId": "789012",
+        "image": "https://example.com/images/1984.jpg",
+        "description": "A dystopian novel set in a totalitarian society ruled by Big Brother, exploring themes of surveillance, censorship, and individuality."
+    },
+    {
+        "id": 4,
+        "title": "Pride and Prejudice",
+        "authorName": "Jane Austen",
+        "firstPublishYear": 1813,
+        "coverId": "345678",
+        "image": "https://example.com/images/pride_and_prejudice.jpg",
+        "description": "A romantic novel that critiques the British landed gentry at the end of the 18th century, focusing on the turbulent relationship between Elizabeth Bennet and Fitzwilliam Darcy."
+    },
+    {
+        "id": 5,
+        "title": "Moby-Dick",
+        "authorName": "Herman Melville",
+        "firstPublishYear": 1851,
+        "coverId": "901234",
+        "image": "https://example.com/images/moby_dick.jpg",
+        "description": "A novel about the quest of Ishmael to hunt the elusive whale, Moby Dick, exploring themes of obsession, revenge, and humanity."
+    }
+]

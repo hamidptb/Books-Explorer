@@ -11,7 +11,8 @@ import SwiftUI
 struct Books_ExplorerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            BooksListView(viewModel: BooksListViewModel(apiService: APIPreviewClient()))
+//            BooksListView(viewModel: BooksListViewModel(apiService: APIClient()))
         }
     }
 }

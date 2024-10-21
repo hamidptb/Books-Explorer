@@ -14,14 +14,23 @@ class BooksListViewModel: ObservableObject {
     
     @Published var books: [Book] = []
     
-    @Published var searchText: String = ""
+    @Published var searchText: String = "*"
     
     @Published private(set) var isFetching = false
-
+    
     @Published private(set) var errorMessage: String?
     
+    private var currentPage = 0
+    
+    var hasMorePages = true
+    // MARK: -
+    
+    var bookRowViewModels: [BookRowViewModel] {
+        books.map { BookRowViewModel(book: $0) }
+    }
+    
     // MARK: - Dependencies
-
+    
     private let apiService: APIService
     
     // MARK: - Subscription Management
@@ -32,24 +41,18 @@ class BooksListViewModel: ObservableObject {
     
     init(apiService: APIService) {
         self.apiService = apiService
-        
-        fetchBooks()
-        
-        $searchText
-            .debounce(for: .milliseconds(300), scheduler: RunLoop.main)
-            .removeDuplicates()
-            .sink { [weak self] searchText in
-                self?.fetchBooks(searchText: searchText)
-            }
-            .store(in: &cancellables)
     }
     
     // MARK: - Helper Methods
     
-    func fetchBooks(searchText: String = "") {
+    func fetchBooks(searchText: String = "*") {
+        guard !isFetching, hasMorePages else { return }
+        
         isFetching = true
         
-        apiService.search(searchText: searchText)
+        let startIndex = currentPage * Environment.defaultMaxResult
+        
+        apiService.search(searchText: searchText, startIndex: startIndex)
             .sink(receiveCompletion: { [weak self] completion in
                 self?.isFetching = false
                 
@@ -58,14 +61,26 @@ class BooksListViewModel: ObservableObject {
                     print("Successfully Fetched Books")
                 case .failure(let error):
                     print("Unable to Fetch Books \(error)")
-
+                    
                     self?.errorMessage = APIErrorMapper(
                         error: error,
                         context: .books
                     ).message
                 }
-            }, receiveValue: { [weak self] books in
-                self?.books = books
+            }, receiveValue: { [weak self] value in
+                guard let self = self else { return }
+                
+                self.books.append(contentsOf: value.items ?? [])
+                self.currentPage += 1
+                self.hasMorePages = (self.books.count) < value.totalItems
             }).store(in: &cancellables)
+    }
+    
+    func refreshSearch() {
+        books.removeAll()
+        currentPage = 0
+        hasMorePages = true
+        
+        fetchBooks(searchText: searchText)
     }
 }

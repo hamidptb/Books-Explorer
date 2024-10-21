@@ -12,8 +12,8 @@ class APIClient: APIService {
     
     // MARK: - API Service
     
-    func search(searchText: String) -> AnyPublisher<[Book], APIError> {
-        request(.search(searchText: searchText))
+    func search(searchText: String, startIndex: Int) -> AnyPublisher<BookResponse, APIError> {
+        request(.search(searchText: searchText, startIndex: startIndex))
     }
     
     // MARK: - Helper Methods
@@ -29,12 +29,20 @@ class APIClient: APIService {
                         throw APIError.failedRequest
                     }
 
-                    guard (200..<300).contains(statusCode) else {
-                        if statusCode == 401 {
-                            throw APIError.unauthorized
-                        } else {
-                            throw APIError.failedRequest
-                        }
+                    // Handle specific status codes
+                    switch statusCode {
+                    case 200..<300:
+                        break // Success
+                    case 400:
+                        throw APIError.badRequest
+                    case 401:
+                        throw APIError.unauthorized
+                    case 403:
+                        throw APIError.forbidden
+                    case 429:
+                        throw APIError.tooManyRequests
+                    default:
+                        throw APIError.failedRequest
                     }
 
                     if statusCode == 204, let noContent = NoContent() as? T {

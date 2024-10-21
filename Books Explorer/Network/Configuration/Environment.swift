@@ -10,7 +10,10 @@ import Foundation
 enum Environment {
 
     static var apiBaseURL: URL {
-        URL(string: "https://openlibrary.org")!
+        URL(string: "https://www.googleapis.com")!
     }
     
+    static var defaultMaxResult: Int {
+        10
+    }
 }

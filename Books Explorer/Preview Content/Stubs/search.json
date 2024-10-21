@@ -1,47 +1,738 @@
-[
+{
+  "kind": "books#volumes",
+  "totalItems": 461,
+  "items": [
     {
-        "id": 1,
-        "title": "The Great Gatsby",
-        "authorName": "F. Scott Fitzgerald",
-        "firstPublishYear": 1925,
-        "coverId": "123456",
-        "image": "https://example.com/images/great_gatsby.jpg",
-        "description": "A novel set in the Roaring Twenties, it tells the story of Jay Gatsby's unrequited love for Daisy Buchanan."
+      "kind": "books#volume",
+      "id": "DQm3PbBYm7gC",
+      "etag": "X8IQ06VhF1A",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/DQm3PbBYm7gC",
+      "volumeInfo": {
+        "title": "In Answer to Your Query",
+        "publishedDate": "19??",
+        "description": "Brief information sheets on a variety of copyright issues.",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "PURD:32754081673786"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 2,
+        "printType": "BOOK",
+        "categories": [
+          "Copyright"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.4.1.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=DQm3PbBYm7gC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=DQm3PbBYm7gC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.de/books?id=DQm3PbBYm7gC&q=YOUR_QUERY&dq=YOUR_QUERY&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.de/books?id=DQm3PbBYm7gC&dq=YOUR_QUERY&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/In_Answer_to_Your_Query.html?hl=&id=DQm3PbBYm7gC"
+      },
+      "saleInfo": {
+        "country": "DE",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "DE",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=DQm3PbBYm7gC&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eyour query\u003c/b\u003e PSEUDONYMS FLPURDUE UNIVERSITY FEB 1 7 2004 U.S. DEPOSITORY A pseudonym or pen name may be used by an author of a copyrighted work . A work is pseudonymous if the author is identified on copies or phonorecords of that work by&nbsp;..."
+      }
     },
     {
-        "id": 2,
-        "title": "To Kill a Mockingbird",
-        "authorName": "Harper Lee",
-        "firstPublishYear": 1960,
-        "coverId": "654321",
-        "image": "https://example.com/images/to_kill_a_mockingbird.jpg",
-        "description": "A novel about the serious issues of rape and racial inequality, seen through the eyes of a young girl in the American South."
+      "kind": "books#volume",
+      "id": "a_a5gsKxBOEC",
+      "etag": "pPOEyLiu1RA",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/a_a5gsKxBOEC",
+      "volumeInfo": {
+        "title": "Building an Intelligent Web: Theory and Practice",
+        "subtitle": "Theory and Practice",
+        "authors": [
+          "Pawan Lingras",
+          "Rajendra Akerkar"
+        ],
+        "publisher": "Jones & Bartlett Publishers",
+        "publishedDate": "2007-10-17",
+        "description": "The World Wide Web has become an extremely popular way of publishing and distributing electronic resources. Though the Web is rich with information, collecting and making sense of this data is difficult because it is rather unorganized. Building an Intelligent Web introduces students and professionals to the state-of-the art development of Web Intelligence techniques and teaches how to apply these techniques to develop the next generation of intelligent Web sites. Each chapter contains theoretical bases, which are also illustrated with the help of simple numeric examples, followed by practical implementation. Students will find Building an Intelligent Web to be an active and exciting introduction to advanced Web mining topics. Topics covered include Web Intelligence, Information Retrieval, Semantic Web, Classification and Association Rules, SQL, Database Theory, Applications to e-commerce and Bioinformatics, Clustering, Modeling Web Topology, and much more!",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781449663223"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1449663222"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 340,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "2.3.4.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=a_a5gsKxBOEC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=a_a5gsKxBOEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.de/books?id=a_a5gsKxBOEC&pg=PA95&dq=YOUR_QUERY&hl=&cd=2&source=gbs_api",
+        "infoLink": "http://books.google.de/books?id=a_a5gsKxBOEC&dq=YOUR_QUERY&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Building_an_Intelligent_Web_Theory_and_P.html?hl=&id=a_a5gsKxBOEC"
+      },
+      "saleInfo": {
+        "country": "DE",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "DE",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.de/books/download/Building_an_Intelligent_Web_Theory_and_P-sample-epub.acsm?id=a_a5gsKxBOEC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.de/books/download/Building_an_Intelligent_Web_Theory_and_P-sample-pdf.acsm?id=a_a5gsKxBOEC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=a_a5gsKxBOEC&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eyour query\u003c/b\u003e ( &quot; quit &quot; to end the program ) : // course [ @ title = &quot; Nonlinear Analysis &quot; ] &lt; course title = &quot; Nonlinear Analysis &quot; / &gt; &lt; course title = &quot; Nonlinear Analysis &quot; / &gt; Please input \u003cb\u003eyour query\u003c/b\u003e ( &quot; quit &quot; to end the program )&nbsp;..."
+      }
     },
     {
-        "id": 3,
-        "title": "1984",
-        "authorName": "George Orwell",
-        "firstPublishYear": 1949,
-        "coverId": "789012",
-        "image": "https://example.com/images/1984.jpg",
-        "description": "A dystopian novel set in a totalitarian society ruled by Big Brother, exploring themes of surveillance, censorship, and individuality."
+      "kind": "books#volume",
+      "id": "LYxgAwAAQBAJ",
+      "etag": "1Sf83k+Zurs",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/LYxgAwAAQBAJ",
+      "volumeInfo": {
+        "title": "Excel Data Analysis For Dummies",
+        "authors": [
+          "Stephen L. Nelson",
+          "E. C. Nelson"
+        ],
+        "publisher": "John Wiley & Sons",
+        "publishedDate": "2014-04-14",
+        "description": "Harness the power of Excel to discover what your numbers are hiding Excel Data Analysis For Dummies, 2nd Edition is the ultimate guide to getting the most out of your data. Veteran Dummies author Stephen L. Nelson guides you through the basic and not-so-basic features of Excel to help you discover the gems hidden in your rough data. From input, to analysis, to visualization, the book walks you through the steps that lead to superior data analysis. Excel is the number-one spreadsheet application, with ever-expanding capabilities. If you're only using it to balance the books, you're missing out on a host of functions that can benefit your business or personal finances by uncovering trends and other important information hidden within the numbers. Excel Data Analysis For Dummies, 2nd Edition eliminates the need for advanced statistics or analysis courses by allowing you to harness the full power of Excel to do the heavy lifting for you. This 2nd Edition is fully updated to include information about Excel's latest features, making it a your go-to Excel guide for data analysis. Topics include: Working with external databases PivotTables and PivotCharts Using Excel for statistical and financial functions Solver, Small Business Finance Manager, and more The book also includes a guide to chart types and formatting, and advice on effective visual data presentation. You already have the data, so you might as well get something great out of it. Excel Data Analysis For Dummies, 2nd Edition is the key to discovering what your numbers are hiding.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781118898086"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1118898087"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 360,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.5.5.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=LYxgAwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=LYxgAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.de/books?id=LYxgAwAAQBAJ&pg=PA52&dq=YOUR_QUERY&hl=&cd=3&source=gbs_api",
+        "infoLink": "http://books.google.de/books?id=LYxgAwAAQBAJ&dq=YOUR_QUERY&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Excel_Data_Analysis_For_Dummies.html?hl=&id=LYxgAwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "DE",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "DE",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.de/books/download/Excel_Data_Analysis_For_Dummies-sample-epub.acsm?id=LYxgAwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.de/books/download/Excel_Data_Analysis_For_Dummies-sample-pdf.acsm?id=LYxgAwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=LYxgAwAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eyour query\u003c/b\u003e results. In the Available Tables and Columns box, Excel lists tables and fields. Initially, this list ... \u003cb\u003eYour Query\u003c/b\u003e list box. To add all the fields in a table to your list, click the table name and then click the right&nbsp;..."
+      }
     },
     {
-        "id": 4,
-        "title": "Pride and Prejudice",
-        "authorName": "Jane Austen",
-        "firstPublishYear": 1813,
-        "coverId": "345678",
-        "image": "https://example.com/images/pride_and_prejudice.jpg",
-        "description": "A romantic novel that critiques the British landed gentry at the end of the 18th century, focusing on the turbulent relationship between Elizabeth Bennet and Fitzwilliam Darcy."
+      "kind": "books#volume",
+      "id": "qQG02olzkSoC",
+      "etag": "Z8to/eZMz9Q",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/qQG02olzkSoC",
+      "volumeInfo": {
+        "title": "PC Mag",
+        "publishedDate": "1997-10-21",
+        "description": "PCMag.com is a leading authority on technology, delivering Labs-based, independent reviews of the latest products and services. Our expert industry analysis and practical solutions help you make better buying decisions and get more from technology.",
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 388,
+        "printType": "MAGAZINE",
+        "averageRating": 4,
+        "ratingsCount": 1,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.3.3.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=qQG02olzkSoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=qQG02olzkSoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.de/books?id=qQG02olzkSoC&pg=PA310&dq=YOUR_QUERY&hl=&cd=4&source=gbs_api",
+        "infoLink": "http://books.google.de/books?id=qQG02olzkSoC&dq=YOUR_QUERY&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/PC_Mag.html?hl=&id=qQG02olzkSoC"
+      },
+      "saleInfo": {
+        "country": "DE",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "DE",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=qQG02olzkSoC&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eyour query\u003c/b\u003e result. This works best only when you output \u003cb\u003eyour query\u003c/b\u003e result to a table. lCounter + 1 CElEBRI\\&#39;l&#39;E AS PCs COMPl.EA&#39;l&#39; JINS THE ~ N VCOMPIISA IRECT. DATABASES Autonum for Queries Help! I&#39;m sure there must be an easy way to&nbsp;..."
+      }
     },
     {
-        "id": 5,
-        "title": "Moby-Dick",
-        "authorName": "Herman Melville",
-        "firstPublishYear": 1851,
-        "coverId": "901234",
-        "image": "https://example.com/images/moby_dick.jpg",
-        "description": "A novel about the quest of Ishmael to hunt the elusive whale, Moby Dick, exploring themes of obsession, revenge, and humanity."
+      "kind": "books#volume",
+      "id": "ZAH1AwAAQBAJ",
+      "etag": "HEnDe6P2MjE",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/ZAH1AwAAQBAJ",
+      "volumeInfo": {
+        "title": "Power Query for Power BI and Excel",
+        "authors": [
+          "Christopher Webb",
+          "Crossjoin Consulting Limited"
+        ],
+        "publisher": "Apress",
+        "publishedDate": "2014-07-05",
+        "description": "Power Query for Power BI and Excel is a book for people who are tired of copying and pasting data into Excel worksheets. Power Query, part of the Microsoft Power BI suite, is a tool that automates the process of getting data into Excel and will save you hours of dull, repetitive, and error-prone work! Power Query makes it easy to extract data from many different data sources, filter that data, aggregate it, clean it and perform calculations on it, finally loading that data into either your worksheet or directly into the new Excel 2013 Data Model used by Power Pivot. This concise, practical book provides a complete guide to Power Query and how to use it to solve all of your Excel data-loading problems. Power Query for Power BI and Excel goes well beyond the surface of what Power Query can do. The book goes deep into the underlying M language, showing you how to do amazing things that aren’t going to be possible from just the GUI interface that is covered in most other books. You’ll have full command of the GUI, and you’ll be able to drop into the M language to go beyond what the GUI provides. The depth in this book makes it a must-have item for anyone who is pushing Power BI and Excel to their limits in the pursuit of business intelligence from data analysis. Teaches the basics of using Power Query to load data into Excel Helps you solve common, data-related problems with Power Query Shows how to write your own solutions in the powerful M language",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781430266921"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1430266929"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 261,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.7.6.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=ZAH1AwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=ZAH1AwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.de/books?id=ZAH1AwAAQBAJ&pg=PA170&dq=YOUR_QUERY&hl=&cd=5&source=gbs_api",
+        "infoLink": "http://books.google.de/books?id=ZAH1AwAAQBAJ&dq=YOUR_QUERY&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Power_Query_for_Power_BI_and_Excel.html?hl=&id=ZAH1AwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "DE",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "DE",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.de/books/download/Power_Query_for_Power_BI_and_Excel-sample-epub.acsm?id=ZAH1AwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.de/books/download/Power_Query_for_Power_BI_and_Excel-sample-pdf.acsm?id=ZAH1AwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=ZAH1AwAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eyour query\u003c/b\u003e . It&#39;s a good idea to fill in as much detail as possible here because it will help other users to understand what \u003cb\u003eyour query\u003c/b\u003e does ; also the text here is indexed by the Power BI Data Catalog , so more detail will also&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "0ZuhkxQwEUoC",
+      "etag": "VRfnPeaLx2w",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/0ZuhkxQwEUoC",
+      "volumeInfo": {
+        "title": "Database Programming with C#",
+        "authors": [
+          "Carsten Thomsen"
+        ],
+        "publisher": "Apress",
+        "publishedDate": "2002-04-05",
+        "description": "Non-VB programmers are shown how they can have the same database ease that Visual Basic programmers have: step-by-step coverage of data access in Visual Studio .NET, with example code in C#.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781430210986"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1430210982"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 683,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.4.4.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=0ZuhkxQwEUoC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=0ZuhkxQwEUoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.de/books?id=0ZuhkxQwEUoC&pg=PA329&dq=YOUR_QUERY&hl=&cd=6&source=gbs_api",
+        "infoLink": "http://books.google.de/books?id=0ZuhkxQwEUoC&dq=YOUR_QUERY&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Database_Programming_with_C.html?hl=&id=0ZuhkxQwEUoC"
+      },
+      "saleInfo": {
+        "country": "DE",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "DE",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.de/books/download/Database_Programming_with_C-sample-pdf.acsm?id=0ZuhkxQwEUoC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=0ZuhkxQwEUoC&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eyour query\u003c/b\u003e is valid or that \u003cb\u003eyour query\u003c/b\u003e needs to be changed according to the explanation shown in the message box . Typical errors are typos , like in Figure 4-28 . If \u003cb\u003eyour query\u003c/b\u003e is invalid , you may get more information by clicking the&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "BJYSy3XDlj4C",
+      "etag": "+FeLxWeyMQg",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/BJYSy3XDlj4C",
+      "volumeInfo": {
+        "title": "Monthly Catalog of United States Government Publications",
+        "publishedDate": "1990",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "MINN:31951T00218129N"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 1304,
+        "printType": "BOOK",
+        "categories": [
+          "Government publications"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.5.6.0.full.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=BJYSy3XDlj4C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=BJYSy3XDlj4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.de/books?id=BJYSy3XDlj4C&pg=SA1-PA237&dq=YOUR_QUERY&hl=&cd=7&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=BJYSy3XDlj4C&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=BJYSy3XDlj4C"
+      },
+      "saleInfo": {
+        "country": "DE",
+        "saleability": "FREE",
+        "isEbook": true,
+        "buyLink": "https://play.google.com/store/books/details?id=BJYSy3XDlj4C&rdid=book-BJYSy3XDlj4C&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "DE",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": true,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false,
+          "downloadLink": "http://books.google.de/books/download/Monthly_Catalog_of_United_States_Governm.epub?id=BJYSy3XDlj4C&hl=&output=epub&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=BJYSy3XDlj4C&hl=&source=gbs_api",
+        "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eyour query\u003c/b\u003e : contribution to collective work . , 90-11894 In answer to \u003cb\u003eyour query\u003c/b\u003e : copyright reg- istration of books , manuscripts , and speeches . , 90-6910 In answer to \u003cb\u003eyour query\u003c/b\u003e : copyright reg- istration of music . , 90-6909 In&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "nrk1EAAAQBAJ",
+      "etag": "Au6Aylxezm4",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/nrk1EAAAQBAJ",
+      "volumeInfo": {
+        "title": "Cloud Scale Analytics with Azure Data Services",
+        "subtitle": "Build modern data warehouses on Microsoft Azure",
+        "authors": [
+          "Patrik Borosch"
+        ],
+        "publisher": "Packt Publishing Ltd",
+        "publishedDate": "2021-07-23",
+        "description": "A practical guide to implementing a scalable and fast state-of-the-art analytical data estate Key FeaturesStore and analyze data with enterprise-grade security and auditingPerform batch, streaming, and interactive analytics to optimize your big data solutions with easeDevelop and run parallel data processing programs using real-world enterprise scenariosBook Description Azure Data Lake, the modern data warehouse architecture, and related data services on Azure enable organizations to build their own customized analytical platform to fit any analytical requirements in terms of volume, speed, and quality. This book is your guide to learning all the features and capabilities of Azure data services for storing, processing, and analyzing data (structured, unstructured, and semi-structured) of any size. You will explore key techniques for ingesting and storing data and perform batch, streaming, and interactive analytics. The book also shows you how to overcome various challenges and complexities relating to productivity and scaling. Next, you will be able to develop and run massive data workloads to perform different actions. Using a cloud-based big data-modern data warehouse-analytics setup, you will also be able to build secure, scalable data estates for enterprises. Finally, you will not only learn how to develop a data warehouse but also understand how to create enterprise-grade security and auditing big data programs. By the end of this Azure book, you will have learned how to develop a powerful and efficient analytical platform to meet enterprise needs. What you will learnImplement data governance with Azure servicesUse integrated monitoring in the Azure Portal and integrate Azure Data Lake Storage into the Azure MonitorExplore the serverless feature for ad-hoc data discovery, logical data warehousing, and data wranglingImplement networking with Synapse Analytics and Spark poolsCreate and run Spark jobs with Databricks clustersImplement streaming using Azure Functions, a serverless runtime environment on AzureExplore the predefined ML services in Azure and use them in your appWho this book is for This book is for data architects, ETL developers, or anyone who wants to get well-versed with Azure data services to implement an analytical data estate for their enterprise. The book will also appeal to data scientists and data analysts who want to explore all the capabilities of Azure data services, which can be used to store, process, and analyze any kind of data. A beginner-level understanding of data analysis and streaming will be required.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781800562141"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1800562144"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 520,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=nrk1EAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=nrk1EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.de/books?id=nrk1EAAAQBAJ&pg=PA351&dq=YOUR_QUERY&hl=&cd=8&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=nrk1EAAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=nrk1EAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "DE",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 39.58,
+          "currencyCode": "EUR"
+        },
+        "retailPrice": {
+          "amount": 27.71,
+          "currencyCode": "EUR"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=nrk1EAAAQBAJ&rdid=book-nrk1EAAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 39580000,
+              "currencyCode": "EUR"
+            },
+            "retailPrice": {
+              "amountInMicros": 27710000,
+              "currencyCode": "EUR"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "DE",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true
+        },
+        "pdf": {
+          "isAvailable": true
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=nrk1EAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eyour query\u003c/b\u003e text below the PARSER_ VERSION entry to adjust the column delimiter to reflect the semicolon: , FIELDTERMINATOR=&#39;;&#39; But there is still an issue. The first line is not recognized as a header. To use the first line of the file&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "HVwwDLPvE-oC",
+      "etag": "V/uL2qihsfs",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/HVwwDLPvE-oC",
+      "volumeInfo": {
+        "title": "WRITING QUALITATIVE INQUIRY",
+        "subtitle": "SELF, STORIES, AND ACADEMIC LIFE",
+        "authors": [
+          "H.L. Goodall, Jr."
+        ],
+        "publisher": "Left Coast Press",
+        "publishedDate": "2012-03-15",
+        "description": "Responding to the rapid growth of personal narrative as a method of inquiry among qualitative scholars, Bud Goodall offers a concise volume of practical advice for scholars and students seeking to work in this tradition. He provides writing tips and strategies from a well-published, successful author of creative nonfiction and concrete guidance on finding appropriate outlets for your work. For readers, he offers a set of criteria to assess the quality of creative nonfiction writing. Goodall suggests paths to success within the academy—still rife with political sinkholes for the narrative ethnographer—and ways of building a career as a public scholar. Goodall’s work serves as both a writing manual and career guide for those in qualitative inquiry.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781611326437"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1611326435"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 257,
+        "printType": "BOOK",
+        "categories": [
+          "Social Science"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.4.3.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=HVwwDLPvE-oC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=HVwwDLPvE-oC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.de/books?id=HVwwDLPvE-oC&pg=PA209&dq=YOUR_QUERY&hl=&cd=9&source=gbs_api",
+        "infoLink": "http://books.google.de/books?id=HVwwDLPvE-oC&dq=YOUR_QUERY&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/WRITING_QUALITATIVE_INQUIRY.html?hl=&id=HVwwDLPvE-oC"
+      },
+      "saleInfo": {
+        "country": "DE",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "DE",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.de/books/download/WRITING_QUALITATIVE_INQUIRY-sample-epub.acsm?id=HVwwDLPvE-oC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.de/books/download/WRITING_QUALITATIVE_INQUIRY-sample-pdf.acsm?id=HVwwDLPvE-oC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=HVwwDLPvE-oC&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eyour query\u003c/b\u003e to one page only . Unless it must be two . But understand that two is usually one page longer than an agent will read . Do format \u003cb\u003eyour query\u003c/b\u003e using standard business letter alignment and spacing . That means single - spaced&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "etQm2gqn6-4C",
+      "etag": "+6CB8zGny8o",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/etQm2gqn6-4C",
+      "volumeInfo": {
+        "title": "Mariners Weather Log",
+        "publishedDate": "1985",
+        "description": "November issue includes abridged index to yearly volume.",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "IND:30000088235449"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 296,
+        "printType": "BOOK",
+        "categories": [
+          "Marine meteorology"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.2.4.0.full.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=etQm2gqn6-4C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=etQm2gqn6-4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.de/books?id=etQm2gqn6-4C&pg=PA10&dq=YOUR_QUERY&hl=&cd=10&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=etQm2gqn6-4C&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=etQm2gqn6-4C"
+      },
+      "saleInfo": {
+        "country": "DE",
+        "saleability": "FREE",
+        "isEbook": true,
+        "buyLink": "https://play.google.com/store/books/details?id=etQm2gqn6-4C&rdid=book-etQm2gqn6-4C&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "DE",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": true,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false,
+          "downloadLink": "http://books.google.de/books/download/Mariners_Weather_Log.epub?id=etQm2gqn6-4C&hl=&output=epub&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=etQm2gqn6-4C&hl=&source=gbs_api",
+        "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eYOUR QUERY\u003c/b\u003e , TYPE IN THE WORD HELP . IF YOU DISCOVER THAT ONE OF THE VALUES WHICH YOU TYPED IS INCORRECT , JUST CONTINUE \u003cb\u003eYOUR QUERY\u003c/b\u003e . AFTER \u003cb\u003eYOUR QUERY\u003c/b\u003e HAS BEEN ENTERED YOU WILL BE OFFERED AN OPPORTUNITY TO RETURN TO THE START AND&nbsp;..."
+      }
     }
-]
+  ]
+}

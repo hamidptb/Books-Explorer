@@ -6,13 +6,16 @@
 //
 
 enum APIError: Error {
-
+    
     // MARK: - Cases
-
-    case unknown
-    case unreachable
+    
     case unauthorized
+    case unreachable
     case failedRequest
     case invalidResponse
-
+    case unknown
+    case tooManyRequests
+    case badRequest
+    case forbidden
+    
 }

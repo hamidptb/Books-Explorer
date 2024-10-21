@@ -12,7 +12,7 @@ struct APIPreviewClient: APIService {
     
     // MARK: - Methods
     
-    func search(searchText: String) -> AnyPublisher<[Book], APIError> {
+    func search(searchText: String, startIndex: Int) -> AnyPublisher<BookResponse, APIError> {
         publisher(for: "search")
     }
 }

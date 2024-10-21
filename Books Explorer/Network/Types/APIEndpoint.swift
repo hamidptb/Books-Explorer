@@ -11,7 +11,7 @@ enum APIEndpoint {
 
     // MARK: - Cases
     
-    case search(searchText: String)
+    case search(searchText: String, startIndex: Int)
     
     // MARK: - Properties
 
@@ -34,14 +34,17 @@ enum APIEndpoint {
     private var path: String {
         switch self {
         case .search:
-            return "/search.json"
+            return "/books/v1/volumes"
         }
     }
     
     private var params: [URLQueryItem]? {
         switch self {
-        case .search(let searchText):
-            return [URLQueryItem(name: "title", value: searchText)]
+        case .search(let searchText, let startIndex):
+            let formattedSearchText = searchText.replacingOccurrences(of: " ", with: "+")
+            return [URLQueryItem(name: "q", value: formattedSearchText),
+                    URLQueryItem(name: "maxResults", value: "\(Environment.defaultMaxResult)"),
+                    URLQueryItem(name: "startIndex", value: "\(startIndex)")]
         }
     }
     

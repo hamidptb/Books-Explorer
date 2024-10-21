@@ -21,11 +21,6 @@ struct BooksListView: View {
                     .onSubmit(of: .search) {
                         viewModel.refreshSearch()
                     }
-                    .onAppear {
-                        if viewModel.books.isEmpty {
-                            viewModel.fetchBooks()
-                        }
-                    }
                     .alert(isPresented: $showingAlert) {
                         Alert(
                             title: Text("Error"),
@@ -43,6 +38,13 @@ struct BooksListView: View {
                 }
             }
         }
+        // to handle cancel tapped in searchBar
+        .onChange(of: viewModel.searchText) {
+            if viewModel.searchText.isEmpty {
+                viewModel.searchText = ""
+                viewModel.refreshSearch()
+            }
+        }
         .onChange(of: viewModel.errorMessage) {
             if viewModel.errorMessage != nil {
                 showingAlert = true
@@ -58,6 +60,7 @@ struct BooksListView: View {
                 } label: {
                     BookRowView(viewModel: bookRowViewModel)
                 }
+                // pagination
                 .onAppear {
                     if bookRowViewModel.id == viewModel.books.last?.id {
                         viewModel.fetchBooks()

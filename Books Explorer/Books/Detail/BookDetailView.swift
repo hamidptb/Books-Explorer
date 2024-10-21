@@ -35,7 +35,7 @@ struct BookDetailView: View {
     
     var info: some View {
         HStack {
-            AsyncImage(url: URL(string: viewModel.tempImageUrl)) { image in
+            AsyncImage(url: URL(string: viewModel.thumbnail)) { image in
                 image
                     .resizable()
             } placeholder: {

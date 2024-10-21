@@ -36,10 +36,7 @@ class BookRowViewModel: ObservableObject, Identifiable {
     }
     
     var smallThumbnail: String {
-        return book.volumeInfo.imageLinks?.smallThumbnail ?? "-"
-    }
-    
-    var tempImageUrl: String {
+//        book.volumeInfo.imageLinks?.smallThumbnail ?? "-"
         "https://m.media-amazon.com/images/I/61dGkbaw9QL._AC_UF1000,1000_QL80_.jpg"
     }
     

@@ -38,12 +38,9 @@ class BookDetailViewModel: ObservableObject {
         book.volumeInfo.publishedDate ?? "-"
     }
     
-    var smallThumbnail: String {
-        return book.volumeInfo.imageLinks?.smallThumbnail ?? ""
-    }
-    
-    var tempImageUrl: String {
-        "https://m.media-amazon.com/images/I/61dGkbaw9QL._AC_UF1000,1000_QL80_.jpg"
+    var thumbnail: String {
+        return book.volumeInfo.imageLinks?.thumbnail ?? ""
+//        "https://m.media-amazon.com/images/I/61dGkbaw9QL._AC_UF1000,1000_QL80_.jpg"
     }
     
     var pageCount: Int {

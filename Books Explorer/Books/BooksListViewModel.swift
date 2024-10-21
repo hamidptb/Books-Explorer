@@ -14,7 +14,7 @@ class BooksListViewModel: ObservableObject {
     
     @Published var books: [Book] = []
     
-    @Published var searchText: String = "*"
+    @Published var searchText: String = ""
     
     @Published private(set) var isFetching = false
     
@@ -41,18 +41,22 @@ class BooksListViewModel: ObservableObject {
     
     init(apiService: APIService) {
         self.apiService = apiService
+        
+        fetchBooks()
     }
     
     // MARK: - Helper Methods
     
-    func fetchBooks(searchText: String = "*") {
+    func fetchBooks() {
         guard !isFetching, hasMorePages else { return }
         
         isFetching = true
         
+        let query = searchText.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ? "*" : searchText
+        
         let startIndex = currentPage * Environment.defaultMaxResult
         
-        apiService.search(searchText: searchText, startIndex: startIndex)
+        apiService.search(searchText: query, startIndex: startIndex)
             .sink(receiveCompletion: { [weak self] completion in
                 self?.isFetching = false
                 
@@ -81,6 +85,6 @@ class BooksListViewModel: ObservableObject {
         currentPage = 0
         hasMorePages = true
         
-        fetchBooks(searchText: searchText)
+        fetchBooks()
     }
 }

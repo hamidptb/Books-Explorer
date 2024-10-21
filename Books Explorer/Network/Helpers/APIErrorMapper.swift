@@ -49,7 +49,7 @@ struct APIErrorMapper {
         case .badRequest:
             switch context {
             case .books:
-                return "The request was invalid. Please check and try again."
+                return "The request was invalid. Please check and try again. (check your inserted search text)"
             }
         case .forbidden:
             switch context {

@@ -15,7 +15,7 @@ struct BooksListView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                BooksList
+                booksList
                     .navigationTitle("Books")
                     .searchable(text: $viewModel.searchText, placement: .navigationBarDrawer(displayMode: .always))
                     .onSubmit(of: .search) {
@@ -52,7 +52,9 @@ struct BooksListView: View {
         }
     }
     
-    var BooksList: some View {
+    // MARK: - booksList
+    
+    var booksList: some View {
         List {
             ForEach(viewModel.bookRowViewModels) { bookRowViewModel in
                 NavigationLink {

@@ -37,6 +37,7 @@ struct ImageLinks: Codable {
     let smallThumbnail, thumbnail: String?
 }
 
+// MARK: - Mock Response
 extension BookResponse {
     static let bookResponse: BookResponse = {
         guard let url = Bundle.main.url(forResource: "search", withExtension: "json") else {

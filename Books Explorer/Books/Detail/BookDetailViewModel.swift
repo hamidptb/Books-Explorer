@@ -13,7 +13,7 @@ class BookDetailViewModel: ObservableObject {
 
     private let book: Book
 
-    // MARK: -
+    // MARK: - Details
     
     var id: String {
         book.id

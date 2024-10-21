@@ -23,7 +23,8 @@ class BooksListViewModel: ObservableObject {
     private var currentPage = 0
     
     var hasMorePages = true
-    // MARK: -
+    
+    // MARK: - Details
     
     var bookRowViewModels: [BookRowViewModel] {
         books.map { BookRowViewModel(book: $0) }

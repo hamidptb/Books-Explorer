@@ -14,7 +14,7 @@ class BookRowViewModel: ObservableObject, Identifiable {
 
     let book: Book
 
-    // MARK: -
+    // MARK: - Details
     
     var id: String {
         book.id

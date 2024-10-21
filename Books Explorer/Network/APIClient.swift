@@ -29,7 +29,6 @@ class APIClient: APIService {
                         throw APIError.failedRequest
                     }
 
-                    // Handle specific status codes
                     switch statusCode {
                     case 200..<300:
                         break // Success

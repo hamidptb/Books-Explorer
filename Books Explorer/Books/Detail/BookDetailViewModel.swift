@@ -15,10 +15,6 @@ class BookDetailViewModel: ObservableObject {
 
     // MARK: - Details
     
-    var id: String {
-        book.id
-    }
-    
     var title: String {
         book.volumeInfo.title ?? "-"
     }
@@ -32,10 +28,6 @@ class BookDetailViewModel: ObservableObject {
     
     var publisher: String {
         book.volumeInfo.publisher ?? "-"
-    }
-    
-    var publishedDate: String {
-        book.volumeInfo.publishedDate ?? "-"
     }
     
     var thumbnail: String {

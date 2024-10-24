@@ -54,7 +54,7 @@ struct APIErrorMapper {
         case .forbidden:
             switch context {
             case .books:
-                return "You have forbidden access to this resource."
+                return "You have forbidden access to this resource. Use DNS"
             }
         }
     }

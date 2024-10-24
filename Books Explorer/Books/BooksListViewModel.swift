@@ -53,7 +53,7 @@ class BooksListViewModel: ObservableObject {
         
         isFetching = true
         
-        let query = searchText.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ? "*" : searchText
+        let query = searchText.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ? "all" : searchText
         
         let startIndex = currentPage * Environment.defaultMaxResult
         
@@ -81,7 +81,7 @@ class BooksListViewModel: ObservableObject {
             }).store(in: &cancellables)
     }
     
-    func refreshSearch() {
+    func refreshBooks() {
         books.removeAll()
         currentPage = 0
         hasMorePages = true

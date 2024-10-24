@@ -19,7 +19,7 @@ struct BooksListView: View {
                     .navigationTitle("Books")
                     .searchable(text: $viewModel.searchText, placement: .navigationBarDrawer(displayMode: .always))
                     .onSubmit(of: .search) {
-                        viewModel.refreshSearch()
+                        viewModel.refreshBooks()
                     }
                     .alert(isPresented: $showingAlert) {
                         Alert(
@@ -42,7 +42,7 @@ struct BooksListView: View {
         .onChange(of: viewModel.searchText) {
             if viewModel.searchText.isEmpty {
                 viewModel.searchText = ""
-                viewModel.refreshSearch()
+                viewModel.refreshBooks()
             }
         }
         .onChange(of: viewModel.errorMessage) {
@@ -68,6 +68,11 @@ struct BooksListView: View {
                         viewModel.fetchBooks()
                     }
                 }
+            }
+        }
+        .refreshable {
+            if !viewModel.isFetching {
+                viewModel.refreshBooks()
             }
         }
     }

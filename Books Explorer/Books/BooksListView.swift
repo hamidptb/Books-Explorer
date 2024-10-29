@@ -15,19 +15,13 @@ struct BooksListView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                booksList
-                    .navigationTitle("Books")
-                    .searchable(text: $viewModel.searchText, placement: .navigationBarDrawer(displayMode: .always))
-                    .onSubmit(of: .search) {
-                        viewModel.refreshBooks()
-                    }
-                    .alert(isPresented: $showingAlert) {
-                        Alert(
-                            title: Text("Error"),
-                            message: Text(viewModel.errorMessage ?? "Unknown Error"),
-                            dismissButton: .default(Text("OK"))
-                        )
-                    }
+                if viewModel.bookRowViewModels.isEmpty && !viewModel.isFetching {
+                    Text("No results found")
+                        .foregroundColor(.gray)
+                        .font(.headline)
+                } else {
+                    booksList
+                }
                 
                 if viewModel.isFetching {
                     ProgressView("Loading...")
@@ -37,8 +31,20 @@ struct BooksListView: View {
                         .cornerRadius(Constant.Size.defaultCornerRadius)
                 }
             }
+            .navigationTitle("Books")
+            .searchable(text: $viewModel.searchText, placement: .navigationBarDrawer(displayMode: .always))
+            .onSubmit(of: .search) {
+                viewModel.refreshBooks()
+            }
+            .alert(isPresented: $showingAlert) {
+                Alert(
+                    title: Text("Error"),
+                    message: Text(viewModel.errorMessage ?? "Unknown Error"),
+                    dismissButton: .default(Text("OK"))
+                )
+            }
         }
-        // to handle cancel tapped in searchBar
+        // Handle cancel tapped in search bar
         .onChange(of: viewModel.searchText) {
             if viewModel.searchText.isEmpty {
                 viewModel.searchText = ""
@@ -62,7 +68,7 @@ struct BooksListView: View {
                 } label: {
                     BookRowView(viewModel: bookRowViewModel)
                 }
-                // pagination
+                // Pagination
                 .onAppear {
                     if bookRowViewModel.id == viewModel.books.last?.id {
                         viewModel.fetchBooks()

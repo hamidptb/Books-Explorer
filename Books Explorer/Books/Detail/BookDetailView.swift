@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct BookDetailView: View {
     
@@ -35,7 +36,7 @@ struct BookDetailView: View {
     
     var info: some View {
         HStack {
-            AsyncImage(url: URL(string: viewModel.thumbnail)) { image in
+            WebImage(url: URL(string: viewModel.thumbnail)) { image in
                 image
                     .resizable()
             } placeholder: {

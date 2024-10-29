@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		03A5B63B2CD0EF51000D655E /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 03A5B63A2CD0EF51000D655E /* SDWebImageSwiftUI */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		0385B66D2CC5010A0060CF1A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03A5B63B2CD0EF51000D655E /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = "Books Explorer";
 			packageProductDependencies = (
+				03A5B63A2CD0EF51000D655E /* SDWebImageSwiftUI */,
 			);
 			productName = "Books Explorer";
 			productReference = 0385B65C2CC501080060CF1A /* Books Explorer.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 0385B6532CC501080060CF1A;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				03A5B6392CD0EF51000D655E /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 0385B65D2CC501080060CF1A /* Products */;
 			projectDirPath = "";
@@ -558,6 +567,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		03A5B6392CD0EF51000D655E /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		03A5B63A2CD0EF51000D655E /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03A5B6392CD0EF51000D655E /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0385B6542CC501080060CF1A /* Project object */;
 }

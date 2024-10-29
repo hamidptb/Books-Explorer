@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct BookRowView: View {
     
@@ -15,14 +16,14 @@ struct BookRowView: View {
     
     var body: some View {
         HStack {
-            AsyncImage(url: URL(string: viewModel.smallThumbnail)) { image in
+            WebImage(url: URL(string: viewModel.smallThumbnail)) { image in
                 image
                     .resizable()
             } placeholder: {
                 ProgressView()
             }
             .frame(width: 60, height: 85)
-                
+            
             VStack(alignment: .leading, spacing: 8) {
                 Text(viewModel.title)
                     .font(.system(size: 17, weight: .medium))
